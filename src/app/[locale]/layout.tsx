@@ -26,18 +26,18 @@ export const generateMetadata = async ({ params: { locale } }: { params: { local
     icons: '/d.png',
     title: t('seo.title'),
     description: t('seo.description'),
-    url: 'https://nextjs.org',
+    url: 'https://portfolio-delta-pearl-80.vercel.app',
     openGraph: {
       title: t('seo.og-title'),
       description: t('seo.og-description'),
-      url: 'https://nextjs.org',
+      url: 'https://portfolio-delta-pearl-80.vercel.app',
       images: ['/og-image.jpeg']
     },
     twitter: {
       card: 'summary_large_image',
       title: t('seo.og-title'),
       description: t('seo.og-description'),
-      site: 'https://nextjs.org',
+      site: 'https://portfolio-delta-pearl-80.vercel.app',
       images: ['/og-image.jpeg']
     }
   }
