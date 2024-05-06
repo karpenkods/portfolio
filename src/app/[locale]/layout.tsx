@@ -27,6 +27,7 @@ export const generateMetadata = async ({ params: { locale } }: { params: { local
     title: t('seo.title'),
     description: t('seo.description'),
     url: 'https://portfolio-delta-pearl-80.vercel.app',
+    images: ['/og-image.jpeg'],
     openGraph: {
       title: t('seo.og-title'),
       description: t('seo.og-description'),
