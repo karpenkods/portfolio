@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "i18nexus pull && next dev",
     "build": "i18nexus pull && next build",
-    "start": "next start",
+    "start": "i18nexus next start",
     "lint": "next lint",
     "update": "npm-check-updates"
   },
