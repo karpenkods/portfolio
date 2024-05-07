@@ -22,17 +22,11 @@ export const theme = createTheme({
     fontFamily: montserrat.style.fontFamily,
     h1: {
       fontSize: 48,
-      color: 'silver',
-      '@media (max-width:600px)': {
-        fontSize: 48
-      }
+      color: 'silver'
     },
     h2: {
       fontSize: 24,
-      color: 'silver',
-      '@media (max-width:600px)': {
-        fontSize: 48
-      }
+      color: 'silver'
     }
   },
   components: {

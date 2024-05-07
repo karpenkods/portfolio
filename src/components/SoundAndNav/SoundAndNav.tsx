@@ -21,10 +21,12 @@ interface ISoundProps {
 
 export const SoundAndNav: FC<ISoundProps> = ({ modalSound }) => {
   const audioRef = useRef<HTMLAudioElement>(null)
-  const isMobile = useMediaQueryDown('sm')
   const locale = useLocale()
   const pathname = usePathname()
   const router = useRouter()
+
+  const isMobile = useMediaQueryDown('sm')
+  const isTablet = useMediaQueryDown('lg')
 
   const handleToggle = () => {
     if (modalSound === 'on') {
@@ -54,41 +56,36 @@ export const SoundAndNav: FC<ISoundProps> = ({ modalSound }) => {
         <source src={'/audio/birds39-forest-20772.mp3'} type="audio/mpeg" />
       </audio>
       <Stack
+        direction={isTablet ? 'row' : 'column'}
         spacing={5}
         alignItems="center"
         position="absolute"
         top={isMobile ? '2%' : '4%'}
-        right={isMobile ? '4%' : '3%'}
+        right={isMobile ? '8%' : '3%'}
       >
         <IconButton onClick={handleToggle}>
           {modalSound === 'on' ? (
-            <VolumeUpIcon
-              sx={{ width: isMobile ? '24px' : '28px', height: isMobile ? '24px' : '28px' }}
-            />
+            <VolumeUpIcon sx={{ width: '28px', height: '28px' }} />
           ) : (
-            <VolumeOffIcon
-              sx={{ width: isMobile ? '24px' : '28px', height: isMobile ? '24px' : '28px' }}
-            />
+            <VolumeOffIcon sx={{ width: '28px', height: '28px' }} />
           )}
         </IconButton>
         <Button
-          sx={{ padding: 0, minWidth: '54px', height: '54px' }}
+          sx={{ padding: 0, minWidth: '48px', height: '48px' }}
           onClick={() => handleChangeLang(locale === 'ru' ? 'en' : 'ru')}
         >
           <Image
             priority
             src={locale === 'en' ? Russian : English}
-            width={isMobile ? 24 : 54}
-            height={isMobile ? 24 : 54}
+            width={isMobile ? 48 : 54}
+            height={isMobile ? 48 : 54}
             style={{ borderRadius: '50%' }}
             alt=""
           />
         </Button>
         {pathname !== '/' && (
           <IconButton onClick={() => router.push('/')}>
-            <HomeIcon
-              sx={{ width: isMobile ? '24px' : '28px', height: isMobile ? '24px' : '28px' }}
-            />
+            <HomeIcon sx={{ width: '28px', height: '28px' }} />
           </IconButton>
         )}
       </Stack>

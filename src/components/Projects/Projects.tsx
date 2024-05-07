@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 
 import { Container, Stack, Typography } from '@mui/material'
 
-import { useListProjects } from '@/common'
+import { useListProjects, useMediaQueryDown } from '@/common'
 import { Project } from './Project'
 import { Link } from '@/navigation'
 
@@ -13,6 +13,7 @@ export const Projects: FC = () => {
   const t = useTranslations('projects')
   const Projects = useListProjects()
   const MotionStack = motion(Stack)
+  const isMobile = useMediaQueryDown('md')
 
   const container = {
     hidden: { opacity: 0 },
@@ -29,7 +30,8 @@ export const Projects: FC = () => {
     <Container
       maxWidth="xl"
       sx={{
-        my: '24px',
+        mb: '40px',
+        mt: isMobile ? '154px' : '112px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -37,9 +39,19 @@ export const Projects: FC = () => {
         overflow: 'auto'
       }}
     >
-      <Typography variant="h1" fontWeight={500}>
-        {t('title')}
-      </Typography>
+      <Stack
+        position="fixed"
+        top={0}
+        left={0}
+        width="100%"
+        height={isMobile ? '212px' : '96px'}
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Typography variant="h1" fontWeight={500} color={isMobile ? 'goldenrod' : 'silver'}>
+          {t('title')}
+        </Typography>
+      </Stack>
       <MotionStack
         variants={container}
         initial="hidden"

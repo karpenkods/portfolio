@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 import { IconButton, Stack, Typography } from '@mui/material'
 
-import { IButtonList, useMediaQueryDown } from '@/common'
+import { IButtonList } from '@/common'
 import { Link } from '@/navigation'
 
 interface INavButtonProps {
@@ -16,7 +16,6 @@ interface INavButtonProps {
 export const NavButton: FC<INavButtonProps> = ({ x, y, btn }) => {
   const MotionStack = motion(Stack)
   const MotionText = motion(Typography)
-  const isMobile = useMediaQueryDown('sm')
 
   const item = {
     hidden: { opacity: 0 },
@@ -39,9 +38,7 @@ export const NavButton: FC<INavButtonProps> = ({ x, y, btn }) => {
       >
         <Link href={btn.link} target={btn.isPath ? '_blank' : '_self'} rel="noopener noreferrer">
           <IconButton>
-            <btn.icon
-              sx={{ width: isMobile ? '24px' : '32px', height: isMobile ? '24px' : '32px' }}
-            />
+            <btn.icon sx={{ width: '32px', height: '32px' }} />
             <MotionText
               initial={{ opacity: 0 }}
               whileHover={{ opacity: 1, transition: { delay: 0.2 } }}
