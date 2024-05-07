@@ -16,6 +16,7 @@ export const Contacts: FC = () => {
   const MotionButton = motion(IconButton)
   const MotionStack = motion(Stack)
   const isMobile = useMediaQueryDown('sm')
+  const isMobileBig = useMediaQueryDown('md')
 
   const buttonLeft = {
     hidden: { opacity: 0, x: -200 },
@@ -53,7 +54,7 @@ export const Contacts: FC = () => {
     <Container
       maxWidth="xl"
       sx={{
-        my: '24px',
+        mt: isMobileBig ? '96px' : '24px',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -62,10 +63,20 @@ export const Contacts: FC = () => {
         overflow: 'auto'
       }}
     >
-      <Typography variant="h1" fontWeight={500}>
+      <Typography
+        fontSize={isMobileBig ? '36px' : '48px'}
+        fontWeight={500}
+        color="silver"
+        textAlign="center"
+      >
         {t('title')}
       </Typography>
-      <Typography variant="h2" fontWeight={500}>
+      <Typography
+        fontSize={isMobile ? '18px' : '24px'}
+        fontWeight={500}
+        color="silver"
+        textAlign="center"
+      >
         {t('question')}
       </Typography>
       <Stack direction="row" gap="32px">

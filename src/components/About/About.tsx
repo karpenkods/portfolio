@@ -1,18 +1,21 @@
+'use client'
 import { FC } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 
 import { Container, Typography } from '@mui/material'
 import { Link } from '@/navigation'
+import { useMediaQueryDown } from '@/common'
 
 export const About: FC = () => {
   const t = useTranslations('about')
   const locale = useLocale()
+  const isMobile = useMediaQueryDown('md')
 
   return (
     <Container
       maxWidth="xl"
       sx={{
-        my: '24px',
+        mt: isMobile ? '96px' : '24px',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -20,15 +23,20 @@ export const About: FC = () => {
         gap: '32px'
       }}
     >
-      <Typography variant="h1" fontWeight={500} color="goldenrod">
+      <Typography
+        fontSize={isMobile ? '36px' : '48px'}
+        fontWeight={500}
+        color="goldenrod"
+        textAlign="center"
+      >
         {locale === 'ru' ? 'Карпенко Дмитрий' : 'Karpenko Dmitrii'}
       </Typography>
-      <Typography variant="h2" fontWeight={500}>
+      <Typography fontSize={isMobile ? '18px' : '24px'} fontWeight={500} color="silver">
         {t('exp')}
       </Typography>
-      <Typography variant="h2" fontWeight={500}>
+      <Typography fontSize={isMobile ? '18px' : '24px'} fontWeight={500} color="silver">
         {t('details')}
-        <Typography variant="h2" fontWeight={500}>
+        <Typography fontSize={isMobile ? '18px' : '24px'} fontWeight={500} color="silver">
           {t('work')}
         </Typography>
       </Typography>

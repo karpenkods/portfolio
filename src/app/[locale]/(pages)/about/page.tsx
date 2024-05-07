@@ -32,7 +32,7 @@ export const generateMetadata = async ({ params: { locale } }: { params: { local
 
 const Aboutage: NextPage = () => {
   return (
-    <Stack position="relative" height="100vh">
+    <Stack position="relative" height="100vh" overflow="hidden">
       <Image
         priority
         sizes="100vw"
