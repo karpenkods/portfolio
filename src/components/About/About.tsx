@@ -31,12 +31,29 @@ export const About: FC = () => {
       >
         {locale === 'ru' ? 'Карпенко Дмитрий' : 'Karpenko Dmitrii'}
       </Typography>
-      <Typography fontSize={isMobile ? '18px' : '24px'} fontWeight={500} color="silver">
+      <Typography
+        component="span"
+        textAlign="center"
+        fontSize={isMobile ? '18px' : '24px'}
+        fontWeight={500}
+        color="silver"
+      >
         {t('exp')}
       </Typography>
-      <Typography fontSize={isMobile ? '18px' : '24px'} fontWeight={500} color="silver">
-        {t('details')}
-        <Typography fontSize={isMobile ? '18px' : '24px'} fontWeight={500} color="silver">
+      <Typography
+        component="span"
+        textAlign="center"
+        fontSize={isMobile ? '18px' : '24px'}
+        fontWeight={500}
+        color="silver"
+      >
+        {t('details')}{' '}
+        <Typography
+          component="span"
+          fontSize={isMobile ? '18px' : '24px'}
+          fontWeight={500}
+          color="silver"
+        >
           {t('work')}
         </Typography>
       </Typography>
@@ -47,6 +64,7 @@ export const About: FC = () => {
         style={{ textDecoration: 'none', marginTop: '-20px' }}
       >
         <Typography
+          component="span"
           fontSize={32}
           fontWeight={500}
           sx={{
