@@ -1,1 +1,24 @@
-{"projects":{"alltrucks":"Digital marketplace for international transportation. Transport system for managing the process of container transportation. Full cycle of creating applications for cargo transportation, tracking flights, conducting tenders.","balnchard":"Example of a site using pure HTML, CSS, JS","code":"Code","com":"Commercial","education":"Training","epicday":"B2C marketplace for restaurants. Companies get a cheap, effective sales channel, and users quickly find the right places without going to other sites. The service provides the most complete information on restaurants in Russian cities.","findmatches":"Game \"Find a pair\". There are two difficulty levels to choose from: a 4 by 4 field and a 6 by 6 field. The application is written in pure JS","git":"All projects and code on GitHub","goto":"Go to project","official":"Project for official use","payzakat":"Online platform for collecting and monitoring donations.","plandi":"The PlanDi project ecosystem combines the following services: “Online Office”, “Freelance and Work”, “Project Market” and “Blog” for effective remote work. Services make it possible to implement an idea from design, construction to commissioning.","pomodoro":"The Pomodoro Method is a time management technique developed by college student Francesco Cirillo in the 1980s. The technique, named after the Italian word for tomato, involves multiple time slots spread out throughout the day, marked on a tomato-shaped kitchen timer that Cirillo used himself while honing his time management technique.","queries":"Application for managing database queries and user authorization/registration using Firebase from Google.","telegram":"Communication with artificial intelligence in Telegram","title":"Projects","waqf":"The WAQF project is a crowdfunding platform. Publication of grants and projects followed by voting to determine the winners and distribute the collected funds."}}
+{
+  "projects": {
+    "alltrucks": "Digital marketplace for international transportation. Transport system for managing the process of container transportation. Full cycle of creating applications for cargo transportation, tracking flights, conducting tenders.",
+    "atomshop": "Online store of sports nutrition",
+    "balnchard": "Example of a site using pure HTML, CSS, JS",
+    "code": "Code",
+    "com": "Commercial",
+    "education": "Training",
+    "epicday": "B2C marketplace for restaurants. Companies get a cheap, effective sales channel, and users quickly find the right places without going to other sites. The service provides the most complete information on restaurants in Russian cities.",
+    "findmatches": "Game \"Find a pair\". There are two difficulty levels to choose from: a 4 by 4 field and a 6 by 6 field. The application is written in pure JS",
+    "git": "All projects and code on GitHub",
+    "goto": "Go to project",
+    "official": "Project for official use",
+    "payzakat": "Online platform for collecting and monitoring donations.",
+    "plandi": "The PlanDi project ecosystem combines the following services: “Online Office”, “Freelance and Work”, “Project Market” and “Blog” for effective remote work. Services make it possible to implement an idea from design, construction to commissioning.",
+    "pomodoro": "The Pomodoro Method is a time management technique developed by college student Francesco Cirillo in the 1980s. The technique, named after the Italian word for tomato, involves multiple time slots spread out throughout the day, marked on a tomato-shaped kitchen timer that Cirillo used himself while honing his time management technique.",
+    "queries": "Application for managing database queries and user authorization/registration using Firebase from Google.",
+    "simonitor": "Russian service for diagnosing employee engagement and motivation",
+    "simotone": "Employee Engagement Ecosystem",
+    "telegram": "Communication with artificial intelligence in Telegram",
+    "title": "Projects",
+    "waqf": "The WAQF project is a crowdfunding platform. Publication of grants and projects followed by voting to determine the winners and distribute the collected funds."
+  }
+}

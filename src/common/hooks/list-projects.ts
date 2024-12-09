@@ -4,6 +4,9 @@ import { IProject } from '../models'
 import Plandi from '../../../public/assets/plandi.png'
 import EpicDay from '../../../public/assets/epicday.svg'
 import Waqf from '../../../public/assets/waqf.svg'
+import Atom from '../../../public/assets/atomshop.svg'
+import Simonitor from '../../../public/assets/simonitore.svg'
+import Simotone from '../../../public/assets/simotone.svg'
 import PayZakat from '../../../public/assets/payzakat.svg'
 
 export function useListProjects(): IProject[] {
@@ -40,13 +43,30 @@ export function useListProjects(): IProject[] {
     },
     {
       id: 5,
-      title: 'AllTrucks',
-      description: t('alltrucks'),
-      icon: '',
-      link: 'not-link'
+      title: 'AtomShop',
+      description: t('atomshop'),
+      icon: Atom,
+      link: 'https://atomshop.mindforce.dev/',
+      bigImage: true
     },
     {
       id: 6,
+      title: 'Simonitor',
+      description: t('simonitor'),
+      icon: Simonitor,
+      link: 'https://simonitor.com/',
+      bigImage: true
+    },
+    {
+      id: 7,
+      title: 'Simotone',
+      description: t('simotone'),
+      icon: Simotone,
+      link: 'https://simotone.com/',
+      bigImage: true
+    },
+    {
+      id: 8,
       title: 'Find matches',
       description: t('findmatches'),
       icon: '',
@@ -54,7 +74,7 @@ export function useListProjects(): IProject[] {
       code: 'https://github.com/karpenkods/game-find-matches'
     },
     {
-      id: 7,
+      id: 9,
       title: 'Pomodoro',
       description: t('pomodoro'),
       icon: '',
@@ -62,7 +82,7 @@ export function useListProjects(): IProject[] {
       code: 'https://github.com/karpenkods/pomodoro_box'
     },
     {
-      id: 8,
+      id: 10,
       title: 'Queries',
       description: t('queries'),
       icon: '',
@@ -70,7 +90,7 @@ export function useListProjects(): IProject[] {
       code: 'https://github.com/karpenkods/RTK_Query_and_Registration'
     },
     {
-      id: 9,
+      id: 11,
       title: 'Telegram GPT-chatbot',
       description: t('telegram'),
       icon: '',
@@ -78,7 +98,7 @@ export function useListProjects(): IProject[] {
       code: 'https://github.com/karpenkods/Telegram_GPT_chat_bot'
     },
     {
-      id: 10,
+      id: 12,
       title: 'Blanchard',
       description: t('balnchard'),
       icon: '',

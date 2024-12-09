@@ -1,1 +1,8 @@
-{"error":{"go-home":"Go to Main page","not-found":"Page not found","problem":"Something went wrong!","reset":"Reload page"}}
+{
+  "error": {
+    "go-home": "Go to Main page",
+    "not-found": "Page not found",
+    "problem": "Something went wrong!",
+    "reset": "Reload page"
+  }
+}

@@ -103,7 +103,12 @@ export const Project: FC<IProjectProps> = ({ project }) => {
           {project.code ? (
             <GitHubIcon style={{ fill: 'silver', width: 24, height: 24 }} />
           ) : project.icon ? (
-            <Image alt="" src={project.icon} width={24} height={24} />
+            <Image
+              alt=""
+              src={project.icon}
+              width={project.bigImage ? 64 : 24}
+              height={project.bigImage ? 36 : 24}
+            />
           ) : null}
           <Typography variant="h2">{project.title}</Typography>
         </Stack>

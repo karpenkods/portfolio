@@ -17,4 +17,5 @@ export interface IProject {
   icon: string | StaticImageData
   link: string
   code?: string
+  bigImage?: boolean
 }
