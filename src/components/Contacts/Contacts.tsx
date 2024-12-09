@@ -13,8 +13,8 @@ import { Link } from '@/navigation'
 
 export const Contacts: FC = () => {
   const t = useTranslations('contacts')
-  const MotionButton = motion(IconButton)
-  const MotionStack = motion(Stack)
+  const MotionButton = motion(IconButton as any)
+  const MotionStack = motion(Stack as any)
   const isMobile = useMediaQueryDown('sm')
   const isMobileBig = useMediaQueryDown('md')
 

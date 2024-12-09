@@ -14,8 +14,8 @@ interface INavButtonProps {
 }
 
 export const NavButton: FC<INavButtonProps> = ({ x, y, btn }) => {
-  const MotionStack = motion(Stack)
-  const MotionText = motion(Typography)
+  const MotionStack = motion(Stack as any)
+  const MotionText = motion(Typography as any)
 
   const item = {
     hidden: { opacity: 0 },

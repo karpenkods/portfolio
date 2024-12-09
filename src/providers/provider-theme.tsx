@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 import { ThemeProvider } from '@mui/material/styles'
 import { CssBaseline } from '@mui/material'
@@ -8,7 +8,7 @@ export interface ProviderThemeProps {
   children: ReactNode
 }
 
-export const ProviderTheme: FC<ProviderThemeProps> = async ({ children }) => {
+export const ProviderTheme: any = async ({ children }: any) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

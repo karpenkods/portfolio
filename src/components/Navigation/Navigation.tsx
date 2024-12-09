@@ -10,7 +10,7 @@ import { NavButtonMobile } from './NavButtonMobile'
 
 export const Navigation: FC = () => {
   const buttonsList = useButtonsList()
-  const MotionStack = motion(Stack)
+  const MotionStack = motion(Stack as any)
   const angleIncrement = 360 / buttonsList.length
   const isTablet = useMediaQueryDown('lg')
   const isMobile = useMediaQueryDown('md')

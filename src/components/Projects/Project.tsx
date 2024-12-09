@@ -22,7 +22,7 @@ export const Project: FC<IProjectProps> = ({ project }) => {
   const [show, setShow] = useState(false)
   const [animate, setAnimate] = useState(true)
   const t = useTranslations('projects')
-  const MotionStack = motion(Stack)
+  const MotionStack = motion(Stack as any)
 
   const isMobile = useMediaQueryDown('md')
   const isMobileSmall = useMediaQueryDown('sm')

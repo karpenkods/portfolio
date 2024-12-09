@@ -12,7 +12,7 @@ import { Link } from '@/navigation'
 export const Projects: FC = () => {
   const t = useTranslations('projects')
   const Projects = useListProjects()
-  const MotionStack = motion(Stack)
+  const MotionStack = motion(Stack as any)
   const isMobile = useMediaQueryDown('md')
 
   const container = {
