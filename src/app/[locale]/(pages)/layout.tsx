@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { cookies } from 'next/headers'
 
 import { Stack } from '@mui/material'
@@ -10,7 +10,7 @@ export interface HomeLayoutProps {
   params: { locale: string }
 }
 
-const HomeLayout: FC<HomeLayoutProps> = async ({ children }) => {
+const HomeLayout: any = async ({ children }: any) => {
   const cookie = cookies()
   const modalSound = cookie.get('sound')
 

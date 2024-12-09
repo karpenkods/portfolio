@@ -15,7 +15,8 @@ const nextConfig = {
         hostname: '**'
       }
     ]
-  }
+  },
+  experimental: { serverActions: true }
 }
 
 export default withNextIntl(nextConfig)
