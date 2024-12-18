@@ -18,7 +18,7 @@ export function useListProjects(): IProject[] {
       title: 'PlanDi',
       description: t('plandi'),
       icon: Plandi,
-      link: 'https://plandi.ru'
+      link: 'https://plandi.io'
     },
     {
       id: 2,
@@ -27,19 +27,22 @@ export function useListProjects(): IProject[] {
       icon: EpicDay,
       link: 'https://way2day.ftm.agency'
     },
+
     {
       id: 3,
-      title: 'WAQF',
-      description: t('waqf'),
-      icon: Waqf,
-      link: 'https://digiwaqf.pro'
+      title: 'Simonitor',
+      description: t('simonitor'),
+      icon: Simonitor,
+      link: 'https://simonitor.com/',
+      bigImage: true
     },
     {
       id: 4,
-      title: 'Payzakat',
-      description: t('payzakat'),
-      icon: PayZakat,
-      link: 'https://payzakat.global/'
+      title: 'Simotone',
+      description: t('simotone'),
+      icon: Simotone,
+      link: 'https://simotone.com/',
+      bigImage: true
     },
     {
       id: 5,
@@ -51,19 +54,17 @@ export function useListProjects(): IProject[] {
     },
     {
       id: 6,
-      title: 'Simonitor',
-      description: t('simonitor'),
-      icon: Simonitor,
-      link: 'https://simonitor.com/',
-      bigImage: true
+      title: 'Payzakat',
+      description: t('payzakat'),
+      icon: PayZakat,
+      link: 'https://payzakat.global/'
     },
     {
       id: 7,
-      title: 'Simotone',
-      description: t('simotone'),
-      icon: Simotone,
-      link: 'https://simotone.com/',
-      bigImage: true
+      title: 'WAQF',
+      description: t('waqf'),
+      icon: Waqf,
+      link: 'https://digiwaqf.pro'
     },
     {
       id: 8,
