@@ -2,12 +2,12 @@ import { useTranslations } from 'next-intl'
 
 import { IProject } from '../models'
 import Plandi from '../../../public/assets/plandi.png'
-import EpicDay from '../../../public/assets/epicday.svg'
-import Waqf from '../../../public/assets/waqf.svg'
+import Valaam from '../../../public/assets/valaam.png'
+import Dom from '../../../public/assets/dom.png'
 import Atom from '../../../public/assets/atomshop.svg'
 import Simonitor from '../../../public/assets/simonitore.svg'
 import Simotone from '../../../public/assets/simotone.svg'
-import PayZakat from '../../../public/assets/payzakat.svg'
+import Practice from '../../../public/assets/32.svg'
 
 export function useListProjects(): IProject[] {
   const t = useTranslations('projects')
@@ -22,10 +22,10 @@ export function useListProjects(): IProject[] {
     },
     {
       id: 2,
-      title: 'EpicDay',
-      description: t('epicday'),
-      icon: EpicDay,
-      link: 'https://way2day.ftm.agency'
+      title: t('valaam-title'),
+      description: t('valaam'),
+      icon: Valaam,
+      link: 'https://valaam.ru/'
     },
 
     {
@@ -54,17 +54,17 @@ export function useListProjects(): IProject[] {
     },
     {
       id: 6,
-      title: 'Payzakat',
-      description: t('payzakat'),
-      icon: PayZakat,
-      link: 'https://payzakat.global/'
+      title: t('32-title'),
+      description: t('32'),
+      icon: Practice,
+      link: 'https://32praktika.ru/'
     },
     {
       id: 7,
-      title: 'WAQF',
-      description: t('waqf'),
-      icon: Waqf,
-      link: 'https://digiwaqf.pro'
+      title: t('dom-title'),
+      description: t('dom'),
+      icon: Dom,
+      link: 'https://domchokolada.ru/'
     },
     {
       id: 8,
