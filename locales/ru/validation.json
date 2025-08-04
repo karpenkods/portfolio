@@ -1,10 +1,1 @@
-{
-  "validation": {
-    "message-long": "Слишком длинное сообщение",
-    "message-short": "Слишком короткое сообщение",
-    "name-long": "Слишком длинное имя",
-    "name-short": "Слишком короткое имя",
-    "requered": "Обязательное поле",
-    "wrong-email": "Неправильный email"
-  }
-}
+{"validation":{"message-long":"Слишком длинное сообщение","message-short":"Слишком короткое сообщение","name-long":"Слишком длинное имя","name-short":"Слишком короткое имя","requered":"Обязательное поле","wrong-email":"Неправильный email"}}
