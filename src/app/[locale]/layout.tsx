@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'
+import { Analytics } from '@vercel/analytics/next'
 
 import { locales } from '@/navigation'
 import { ProviderSnackbar, ProviderStore, ProviderTheme } from '@/providers'
@@ -59,7 +60,10 @@ const LocaleLayout: FC<Props> = ({ children, params: { locale } }) => {
           <ProviderStore>
             <ProviderSnackbar>
               <AppRouterCacheProvider>
-                <ProviderTheme>{children}</ProviderTheme>
+                <ProviderTheme>
+                  {children}
+                  <Analytics />
+                </ProviderTheme>
               </AppRouterCacheProvider>
             </ProviderSnackbar>
           </ProviderStore>

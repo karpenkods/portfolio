@@ -20,6 +20,7 @@
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.3",
     "@reduxjs/toolkit": "^2.2.3",
+    "@vercel/analytics": "^1.5.0",
     "clsx": "^2.1.1",
     "cookies-next": "^4.1.1",
     "dayjs": "^1.11.11",
